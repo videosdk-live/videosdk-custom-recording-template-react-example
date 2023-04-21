@@ -1,7 +1,7 @@
 import { usePubSub } from "@videosdk.live/react-sdk";
 import { useEffect, useRef, useState } from "react";
 
-export const ChatNotification = () => {
+export const Notification = () => {
   const timeoutRef = useRef(null);
   const handleChatMessage = (msg) => {
     if (timeoutRef.current) {

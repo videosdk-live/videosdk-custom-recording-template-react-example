@@ -1,5 +1,5 @@
 import { Constants, useMeeting, usePubSub } from "@videosdk.live/react-sdk";
-import { ChatNotification } from "./ChatNotification";
+import { Notification } from "./Notification";
 import { ParticipantsAudioPlayer } from "./ParticipantsAudioPlayer";
 import { ParticipantView } from "./ParticipantView";
 
@@ -46,7 +46,7 @@ export const MeetingContainer = () => {
           );
         })}
       </div>
-      <ChatNotification />
+      <Notification />
     </div>
   ) : (
     <div
