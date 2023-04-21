@@ -8,6 +8,11 @@ VideoSDK is a platform that offers a range of video streaming tools and solution
 - With custom templates, users can create unique and engaging video experiences by overlaying graphics, text, images, and animations onto their live streams. These graphics can be customized to match the branding.
 - Custom templates enable users to create engaging video content with real-time graphics, with live scoreboards, social media feeds, and other customizations, users can easily create unique and visually appealing streams that stands out from the crowd.
 
+ <br/>
+ 
+Here is complete integration guide of [Customized Live Stream](https://docs.videosdk.live/react/guide/interactive-live-streaming/custom-template)
+ 
+
 ## Custom template with VideoSDK
 
 In this section, we will discuss how Custom Templates work with VideoSDK.
@@ -37,6 +42,8 @@ The Template URL consists of two parts:
   - `participantId`: This will be the participant ID of the VideoSDK Template Engine, which should be passed while joining the template engine in your template so that the tempalte engine participant is not visible to other participants. **This parameter will be added by the** **VideoSDK**.
   
  **NOTE** : You can pass N number of query parameters as per your requirements.
+
+Here is complete integration guide of [Customized Live Stream](https://docs.videosdk.live/react/guide/interactive-live-streaming/custom-template)
 
 ## Add Template URL in VideoSDK API
 
