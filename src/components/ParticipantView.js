@@ -18,6 +18,7 @@ export const ParticipantView = (props) => {
 
   return (
     <div
+      className="participant-view"
       style={{
         width: "100%",
         height: "400px",

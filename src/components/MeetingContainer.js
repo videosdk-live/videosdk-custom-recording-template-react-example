@@ -25,9 +25,11 @@ export const MeetingContainer = () => {
     >
       <ParticipantsAudioPlayer />
       <div
+        className={`grid-container ${
+          remoteSpeakers?.length > 1 ? "more-participant" : "single-participant"
+        }`}
         style={{
           display: "grid",
-          gridTemplateColumns: remoteSpeakers?.length > 1 ? "1fr 1fr" : "1fr",
           flex: 1,
           maxHeight: `100vh`,
           overflowY: "auto",

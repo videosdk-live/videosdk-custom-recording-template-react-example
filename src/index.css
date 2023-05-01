@@ -85,3 +85,44 @@ code {
     opacity: 0;
   }
 }
+
+.participant-view{  
+  width: 100%;
+  height: 400px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: "#1A1C22";
+  border-radius: "10px";
+  overflow: "hidden",
+}
+
+.more-participant {
+  grid-template-columns: 1fr 1fr;
+}
+
+.single-participant {
+  grid-template-columns: 1fr;
+}
+
+@media  (max-width: 768px){
+
+  .participant-view {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: "#1A1C22";
+    border-radius: "10px";
+    overflow: "hidden",
+  }
+
+  .more-participant {
+    grid-template-columns: 1fr;
+  }
+  
+}
