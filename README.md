@@ -2,7 +2,7 @@
 
 VideoSDK is a platform that offers a range of video streaming tools and solutions for content creators, publishers, and developers.
 
-## What is Custom Template ? 
+## What is Custom Template ?
 
 - Custom template is template for live stream, which allows users to add real-time graphics to their streams.
 - With custom templates, users can create unique and engaging video experiences by overlaying graphics, text, images, and animations onto their live streams. These graphics can be customized to match the branding.
@@ -11,7 +11,7 @@ VideoSDK is a platform that offers a range of video streaming tools and solution
  <br/>
  
 Here is complete integration guide of [Customized Live Stream](https://docs.videosdk.live/react/guide/interactive-live-streaming/custom-template)
- 
+
 
 ## Custom template with VideoSDK
 
@@ -40,8 +40,7 @@ The Template URL consists of two parts:
   - `token`: This will be your token, which will be used to join the meeting.
   - `meetingId`: This will be the meeting ID that will be joined by the VideoSDK Template Engine.
   - `participantId`: This will be the participant ID of the VideoSDK Template Engine, which should be passed while joining the template engine in your template so that the tempalte engine participant is not visible to other participants. **This parameter will be added by the** **VideoSDK**.
-  
- **NOTE** : You can pass N number of query parameters as per your requirements.
+  **NOTE** : You can pass N number of query parameters as per your requirements.
 
 Here is complete integration guide of [Customized Live Stream](https://docs.videosdk.live/react/guide/interactive-live-streaming/custom-template)
 
@@ -56,7 +55,7 @@ const startRecording = () => {
    const roomId = "your_meeting_id"
    const SDK_TOKEN = "your_sdk_token"
    const API_TOKEN = "your_api_token"
-    
+
     const url = `https://api.videosdk.live/v2/hls/start`;
     //Update your Custom Template URL here if you have deployed your own
     const templateUrl = `https://lab.videosdk.live/react-custom-template-demo?meetingId=${meetingId}&token=${authToken}`;
@@ -71,9 +70,9 @@ const startRecording = () => {
         templateUrl: templateUrl,
       }),
     };
-    
+
     const result = await fetch(url, options)
-      .then((response) => response.json()) // result will have downstreamUrl
+      .then((response) => response.json()) // result will have playbackHlsUrl
       .catch((error) => console.error("error", error));
 }
 
@@ -87,4 +86,3 @@ const startRecording = () => {
 
 - [Discord](https://discord.gg/Gpmj6eCq5u) - To get involved with the Video SDK community, ask questions and share tips.
 - [Twitter](https://twitter.com/video_sdk) - To receive updates, announcements, blog posts, and general Video SDK tips.
-
