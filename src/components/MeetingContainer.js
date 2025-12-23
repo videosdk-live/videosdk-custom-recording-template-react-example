@@ -5,10 +5,17 @@ import { ParticipantView } from "./ParticipantView";
 
 export const MeetingContainer = () => {
   const { isMeetingJoined, participants, localParticipant } = useMeeting();
-  const { messages } = usePubSub("CHANGE_BACKGROUND");
+
+   const handleChangeBackgroundEvent = (msg) => {
+    messages = msg;
+  };
+
+  let { messages } = usePubSub("CHANGE_BACKGROUND",{
+    onMessageReceived: handleChangeBackgroundEvent,
+  });
 
   const remoteSpeakers = [...participants.values()].filter((participant) => {
-    return participant.mode == Constants.modes.CONFERENCE && !participant.local;
+    return participant.mode == Constants.modes.SEND_AND_RECV && !participant.local;
   });
 
   return isMeetingJoined ? (

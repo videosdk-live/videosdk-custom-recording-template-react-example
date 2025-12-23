@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://lab.zujonow.com/react-custom-template-demo/",
   "dependencies": {
-    "@videosdk.live/react-sdk": "^0.1.70",
+    "@videosdk.live/react-sdk": "0.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-player": "^2.12.0",
